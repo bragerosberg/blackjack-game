@@ -21,18 +21,24 @@ const Board = () => {
     if (cardTurn === "player" && playerCard === null) setPlayerCard(randomCard(cardDeck));
   });
 
-  console.log(cardDeck.length);
-
   // remove picked card from deck
-  const removeCard = (selectedCard) => {
-    setCardDeck(cardDeck.filter(card => card.id !== selectedCard.id));
+  const removeCard = (arr, selectedCard) => {
+    let cardsDeckCopy = cardDeck;
+    console.log(cardsDeckCopy.length);
+    console.log( parseInt(selectedCard.id));
+    cardsDeckCopy = cardsDeckCopy.filter(card => {
+      console.log(card.id, "card id");
+      console.log(parseInt(selectedCard.id), "selectedCard id");
+      card.id !== parseInt(selectedCard.id);
+    });
+    console.log(cardsDeckCopy.length);
   }
 
 
   // select random card from deck
   const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
-    removeCard(card);
+    removeCard(arr, card);
     return card;
   }
 

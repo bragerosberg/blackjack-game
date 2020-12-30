@@ -126,187 +126,187 @@ const cards = [
     "value": "6"
   },
   {
-    "id": "21",
+    "id": "19",
     "suit": "diamonds",
+    "name": "six",
+    "value": "6"
+  },
+  {
+    "id": "20",
+    "suit": "hearts",
+    "name": "six",
+    "value": "6"
+  },
+  {
+    "id": "21",
+    "suit": "spades",
     "name": "six",
     "value": "6"
   },
   {
     "id": "22",
-    "suit": "hearts",
-    "name": "six",
-    "value": "6"
+    "suit": "clubs",
+    "name": "seven",
+    "value": "7"
   },
   {
     "id": "23",
-    "suit": "spades",
-    "name": "six",
-    "value": "6"
+    "suit": "diamonds",
+    "name": "seven",
+    "value": "7"
   },
   {
     "id": "24",
-    "suit": "clubs",
+    "suit": "hearts",
     "name": "seven",
     "value": "7"
   },
   {
     "id": "25",
-    "suit": "diamonds",
+    "suit": "spades",
     "name": "seven",
     "value": "7"
   },
   {
     "id": "26",
-    "suit": "hearts",
-    "name": "seven",
-    "value": "7"
+    "suit": "clubs",
+    "name": "eight",
+    "value": "8"
   },
   {
     "id": "27",
-    "suit": "spades",
-    "name": "seven",
-    "value": "7"
+    "suit": "diamonds",
+    "name": "eight",
+    "value": "8"
   },
   {
     "id": "28",
-    "suit": "clubs",
+    "suit": "hearts",
     "name": "eight",
     "value": "8"
   },
   {
     "id": "29",
-    "suit": "diamonds",
+    "suit": "spades",
     "name": "eight",
     "value": "8"
   },
   {
     "id": "30",
-    "suit": "hearts",
-    "name": "eight",
-    "value": "8"
+    "suit": "clubs",
+    "name": "nine",
+    "value": "9"
   },
   {
     "id": "31",
-    "suit": "spades",
-    "name": "eight",
-    "value": "8"
+    "suit": "diamonds",
+    "name": "nine",
+    "value": "9"
   },
   {
     "id": "32",
-    "suit": "clubs",
+    "suit": "hearts",
     "name": "nine",
     "value": "9"
   },
   {
     "id": "33",
-    "suit": "diamonds",
+    "suit": "spades",
     "name": "nine",
     "value": "9"
   },
   {
     "id": "34",
-    "suit": "hearts",
-    "name": "nine",
-    "value": "9"
+    "suit": "clubs",
+    "name": "ten",
+    "value": "10"
   },
   {
     "id": "35",
-    "suit": "spades",
-    "name": "nine",
-    "value": "9"
+    "suit": "diamonds",
+    "name": "ten",
+    "value": "10"
   },
   {
     "id": "36",
-    "suit": "clubs",
+    "suit": "hearts",
     "name": "ten",
     "value": "10"
   },
   {
     "id": "37",
-    "suit": "diamonds",
+    "suit": "spades",
     "name": "ten",
     "value": "10"
   },
   {
     "id": "38",
-    "suit": "hearts",
-    "name": "ten",
-    "value": "10"
-  },
-  {
-    "id": "39",
-    "suit": "spades",
-    "name": "ten",
-    "value": "10"
-  },
-  {
-    "id": "40",
     "suit": "clubs",
     "name": "jack",
     "value": "10"
   },
   {
-    "id": "41",
+    "id": "39",
     "suit": "diamonds",
+    "name": "jack",
+    "value": "10"
+  },
+  {
+    "id": "40",
+    "suit": "hearts",
     "name": "jack",
     "value": "10"
   },
   {
     "id": "42",
-    "suit": "hearts",
+    "suit": "spades",
     "name": "jack",
     "value": "10"
   },
   {
     "id": "43",
-    "suit": "spades",
-    "name": "jack",
+    "suit": "clubs",
+    "name": "queen",
     "value": "10"
   },
   {
     "id": "44",
-    "suit": "clubs",
+    "suit": "diamonds",
     "name": "queen",
     "value": "10"
   },
   {
     "id": "45",
-    "suit": "diamonds",
+    "suit": "hearts",
     "name": "queen",
     "value": "10"
   },
   {
     "id": "46",
-    "suit": "hearts",
-    "name": "queen",
-    "value": "10"
-  },
-  {
-    "id": "47",
     "suit": "spades",
     "name": "queen",
     "value": "10"
   },
   {
-    "id": "48",
+    "id": "47",
     "suit": "clubs",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "49",
+    "id": "48",
     "suit": "diamonds",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "50",
+    "id": "49",
     "suit": "hearts",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "51",
+    "id": "50",
     "suit": "spades",
     "name": "king",
     "value": "10"

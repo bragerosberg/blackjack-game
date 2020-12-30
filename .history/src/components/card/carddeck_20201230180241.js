@@ -306,7 +306,7 @@ const cards = [
     "value": "10"
   },
   {
-    "id": "51",
+    "id": "49",
     "suit": "spades",
     "name": "king",
     "value": "10"

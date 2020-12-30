@@ -32,7 +32,7 @@ const Board = () => {
   // select random card from deck
   const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
-    removeCard(card);
+    removeCard(arr, card);
     return card;
   }
 

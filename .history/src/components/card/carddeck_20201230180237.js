@@ -294,19 +294,19 @@ const cards = [
     "value": "10"
   },
   {
-    "id": "49",
+    "id": "47",
     "suit": "diamonds",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "50",
+    "id": "48",
     "suit": "hearts",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "51",
+    "id": "49",
     "suit": "spades",
     "name": "king",
     "value": "10"

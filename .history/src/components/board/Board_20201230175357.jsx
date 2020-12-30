@@ -21,20 +21,22 @@ const Board = () => {
     if (cardTurn === "player" && playerCard === null) setPlayerCard(randomCard(cardDeck));
   });
 
-  console.log(cardDeck.length);
-
   // remove picked card from deck
-  const removeCard = (selectedCard) => {
-    setCardDeck(cardDeck.filter(card => card.id !== selectedCard.id));
+  const removeCard = (arr, card) => {
+    let cardsDeckCopy = card
   }
 
 
   // select random card from deck
   const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
-    removeCard(card);
+    removeCard(arr, card);
     return card;
   }
+
+
+  console.log(playerCard);
+  console.log(dealerCard);
 
   return (
     <div>

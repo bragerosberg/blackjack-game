@@ -24,7 +24,8 @@ const Board = () => {
   console.log(cardDeck.length);
 
   // remove picked card from deck
-  const removeCard = (selectedCard) => {
+  const removeCard = (arr, selectedCard) => {
+    let cardsDeckCopy = cardDeck;
     setCardDeck(cardDeck.filter(card => card.id !== selectedCard.id));
   }
 
@@ -32,7 +33,7 @@ const Board = () => {
   // select random card from deck
   const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
-    removeCard(card);
+    removeCard(arr, card);
     return card;
   }
 

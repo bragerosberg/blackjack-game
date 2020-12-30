@@ -264,49 +264,49 @@ const cards = [
     "value": "10"
   },
   {
-    "id": "44",
+    "id": "42",
     "suit": "clubs",
+    "name": "queen",
+    "value": "10"
+  },
+  {
+    "id": "43",
+    "suit": "diamonds",
+    "name": "queen",
+    "value": "10"
+  },
+  {
+    "id": "44",
+    "suit": "hearts",
     "name": "queen",
     "value": "10"
   },
   {
     "id": "45",
-    "suit": "diamonds",
-    "name": "queen",
-    "value": "10"
-  },
-  {
-    "id": "46",
-    "suit": "hearts",
-    "name": "queen",
-    "value": "10"
-  },
-  {
-    "id": "47",
     "suit": "spades",
     "name": "queen",
     "value": "10"
   },
   {
-    "id": "48",
+    "id": "46",
     "suit": "clubs",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "49",
+    "id": "47",
     "suit": "diamonds",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "50",
+    "id": "48",
     "suit": "hearts",
     "name": "king",
     "value": "10"
   },
   {
-    "id": "51",
+    "id": "49",
     "suit": "spades",
     "name": "king",
     "value": "10"
