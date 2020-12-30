@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../card/Card';
 import Player from '../player/Player';
 import cards from '../card/carddeck';
 
@@ -39,7 +40,8 @@ const Board = () => {
 
   return (
     <div>
-      <Player card={card}/>
+      <Player />
+      <Card card={card}/>
     </div>
   )
 }

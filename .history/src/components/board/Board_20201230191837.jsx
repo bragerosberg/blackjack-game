@@ -39,7 +39,8 @@ const Board = () => {
 
   return (
     <div>
-      <Player card={card}/>
+      <Player />
+      <Card card={card}/>
     </div>
   )
 }

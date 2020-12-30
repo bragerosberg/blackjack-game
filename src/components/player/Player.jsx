@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Card from '../card/Card';
 
-const Card = (props) => {
+const Player = (props) => {
   const [card, setCard] = useState(null);
 
   useEffect(() => {
@@ -9,16 +10,16 @@ const Card = (props) => {
 
   return card !== null ? (
     <div>
-      <p>{card.id}</p>
-      <p>{card.suit}</p>
-      <p>{card.name}</p>
-      <p>{card.value}</p>
+       <div>
+      <p>Player</p>
+      <Card card={card}/>
+    </div>
     </div>
   ) : (
     <div>
-      <p>Loading card...</p>
+      <p>Loading player...</p>
     </div>
   )
 }
 
-export default Card;
+export default Player; 

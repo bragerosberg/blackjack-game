@@ -7,6 +7,8 @@ const Card = (props) => {
     setCard(props.card);
   })
 
+  console.log(card);
+
   return card !== null ? (
     <div>
       <p>{card.id}</p>

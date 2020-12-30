@@ -7,16 +7,15 @@ const Card = (props) => {
     setCard(props.card);
   })
 
-  return card !== null ? (
+  console.log(card);
+
+  return (
     <div>
+      <p>Card</p>
       <p>{card.id}</p>
       <p>{card.suit}</p>
       <p>{card.name}</p>
       <p>{card.value}</p>
-    </div>
-  ) : (
-    <div>
-      <p>Loading card...</p>
     </div>
   )
 }

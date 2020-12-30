@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Player from '../player/Player';
+import Card from '../card/Card';
 import cards from '../card/carddeck';
 
 
@@ -39,7 +39,7 @@ const Board = () => {
 
   return (
     <div>
-      <Player card={card}/>
+      <Card card={card}/>
     </div>
   )
 }
