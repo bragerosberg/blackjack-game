@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Dealer from '../dealer/Dealer';
 import Player from '../player/Player';
 import cards from '../card/carddeck';
-import './Board.css';
 
 const Board = () => {
   // the last card for each participant
@@ -38,8 +37,8 @@ const Board = () => {
   }
 
   return (
-    <div className="blackjack__wrapper">
-      <button className="blackjack__draw__btn" onClick={() => toggleDealerTurn(!dealerTurn)}>Draw Card</button>
+    <div className="bla">
+      <button className="" onClick={() => toggleDealerTurn(!dealerTurn)}>Draw Card</button>
       <section>
         <Dealer card={dealerCard}/>
         <Player card={playerCard}/>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Dealer from '../dealer/Dealer';
 import Player from '../player/Player';
 import cards from '../card/carddeck';
-import './Board.css';
 
 const Board = () => {
   // the last card for each participant

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Dealer from '../dealer/Dealer';
 import Player from '../player/Player';
 import cards from '../card/carddeck';
-import './Board.css';
 
 const Board = () => {
   // the last card for each participant
@@ -10,15 +9,15 @@ const Board = () => {
   const [playerCard, setPlayerCard] = useState(null);
 
   // whos turn
-  const [dealerTurn, toggleDealerTurn] = useState(false);
+  const [dealerTurn, toggleDealerTurn] = useState("player");
 
   // carddeck and last card
   const [cardDeck, setCardDeck] = useState(cards);
   const [card, setCard] = useState(null);
 
   useEffect(() => {
-    if (dealerTurn === true && dealerCard === null) setDealerCard(randomCard(cardDeck));
-    if (dealerTurn === false && playerCard === null) setPlayerCard(randomCard(cardDeck));
+    if (cardTurn === "dealer" && dealerCard === null) setDealerCard(randomCard(cardDeck));
+    if (cardTurn === "player" && playerCard === null) setPlayerCard(randomCard(cardDeck));
   });
 
   console.log(cardDeck.length);
@@ -38,8 +37,8 @@ const Board = () => {
   }
 
   return (
-    <div className="blackjack__wrapper">
-      <button className="blackjack__draw__btn" onClick={() => toggleDealerTurn(!dealerTurn)}>Draw Card</button>
+    <div>
+      <button onClick={() => console.log("Clicked")}>Draw Card</button>
       <section>
         <Dealer card={dealerCard}/>
         <Player card={playerCard}/>
