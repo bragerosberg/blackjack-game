@@ -5,14 +5,14 @@ import cards from '../card/carddeck';
 
 
 const Board = () => {
-  // the last card for each participant
+  // the recent card
   const [dealerCard, setDealerCard] = useState(null);
   const [playerCard, setPlayerCard] = useState(null);
 
   // whos turn
   const [cardTurn, setCardTurn] = useState("player");
 
-  // carddeck and last card
+  // 
   const [cardDeck, setCardDeck] = useState(cards);
   const [card, setCard] = useState(null);
 
@@ -21,17 +21,7 @@ const Board = () => {
     if (cardTurn === "player" && playerCard === null) setPlayerCard(randomCard(cardDeck));
   });
 
-  // remove picked card from deck
-  const removeCard = (arr, card) => console.log('Not yet implemented');
-
-
-  // select random card from deck
-  const randomCard = (arr) => {
-    const card = arr[arr.length * Math.random() | 0];
-    removeCard(arr, card);
-    return card;
-  }
-
+  const randomCard = (arr) => arr[arr.length * Math.random() | 0];
 
   console.log(playerCard);
   console.log(dealerCard);

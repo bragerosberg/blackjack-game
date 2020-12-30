@@ -22,13 +22,12 @@ const Board = () => {
   });
 
   // remove picked card from deck
-  const removeCard = (arr, card) => console.log('Not yet implemented');
+  const removeCard = (arr, card) => { console.log('') }
 
 
   // select random card from deck
   const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
-    removeCard(arr, card);
     return card;
   }
 
