@@ -11,12 +11,12 @@ const Player = (props) => {
 
   return card !== null ? (
     <div>
-      <p>Player</p>
+      <p>playte</p>
       <Card card={card}/>
     </div>
   ) : (
     <div>
-      <p>Loading Player...</p>
+      <p>Loading Participant...</p>
     </div>
   )
 }

@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../card/Card';
-import Participant from '../common/participant/Participant';
 
 const Player = (props) => {
   const [card, setCard] = useState(null);
@@ -16,10 +15,9 @@ const Player = (props) => {
     </div>
   ) : (
     <div>
-      <p>Loading Player...</p>
+      <p>Loading player...</p>
     </div>
   )
 }
 
-export default Player;
-
+export default Player; 

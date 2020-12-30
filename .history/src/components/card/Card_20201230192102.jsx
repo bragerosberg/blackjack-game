@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Card.css';
 
 const Card = (props) => {
   const [card, setCard] = useState(null);
@@ -10,10 +9,10 @@ const Card = (props) => {
 
   return card !== null ? (
     <div className="card__wrapper">
-      <p>{card.name}</p>
+      <p>{card.id}</p>
       <p>{card.suit}</p>
-      <p>Val: {card.value}</p>
-      <p>ID: {card.id}</p>
+      <p>{card.name}</p>
+      <p>{card.value}</p>
     </div>
   ) : (
     <div>

@@ -10,10 +10,10 @@ const Card = (props) => {
 
   return card !== null ? (
     <div className="card__wrapper">
-      <p>{card.name}</p>
+      <p>ID:{card.id}</p>
       <p>{card.suit}</p>
+      <p>{card.name}</p>
       <p>Val: {card.value}</p>
-      <p>ID: {card.id}</p>
     </div>
   ) : (
     <div>

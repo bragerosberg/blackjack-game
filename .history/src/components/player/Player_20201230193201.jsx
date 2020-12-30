@@ -16,7 +16,7 @@ const Player = (props) => {
     </div>
   ) : (
     <div>
-      <p>Loading Player...</p>
+      <p>Loading Participant...</p>
     </div>
   )
 }

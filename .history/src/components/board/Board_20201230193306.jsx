@@ -38,10 +38,11 @@ const Board = () => {
 
   return (
     <div>
-      <section>
-        <Dealer card={dealerCard}/>
-        <Player card={playerCard}/>
-      </section>
+    <section>
+      
+    </section>
+      <Dealer card={dealerCard}/>
+      <Player card={playerCard}/>
     </div>
   )
 }

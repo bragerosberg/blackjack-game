@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Dealer from '../dealer/Dealer';
-import Player from '../player/Player';
+import Participant from '../participant/Participant';
 import cards from '../card/carddeck';
 
 const Board = () => {
@@ -38,10 +37,7 @@ const Board = () => {
 
   return (
     <div>
-      <section>
-        <Dealer card={dealerCard}/>
-        <Player card={playerCard}/>
-      </section>
+      <Player card={card}/>
     </div>
   )
 }

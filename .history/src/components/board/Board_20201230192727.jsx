@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Dealer from '../dealer/Dealer';
-import Player from '../player/Player';
+import Player from '../participant/Player';
 import cards from '../card/carddeck';
+
+
 
 const Board = () => {
   // the last card for each participant
@@ -38,10 +39,7 @@ const Board = () => {
 
   return (
     <div>
-      <section>
-        <Dealer card={dealerCard}/>
-        <Player card={playerCard}/>
-      </section>
+      <Player card={card}/>
     </div>
   )
 }
