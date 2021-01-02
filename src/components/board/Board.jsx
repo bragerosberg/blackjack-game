@@ -15,6 +15,10 @@ const Board = () => {
   // whos turn
   const [dealerTurn, toggleDealerTurn] = useState(false);
 
+  // count value
+  const [dealerValue, setDealerValue] = useState(0);
+  const [playerValue, setPlayerValue] = useState(0);
+
   // carddeck and last card
   const [cardDeck, setCardDeck] = useState(cards);
   const [card, setCard] = useState(null);
@@ -24,7 +28,17 @@ const Board = () => {
     if (allPlayerCards.length < 2) setPlayerCard(randomCard(cardDeck, "player"));
     if (dealerTurn === true && dealerCard === null) setDealerCard(randomCard(cardDeck, "dealer"));
     if (dealerTurn === false && playerCard === null) setPlayerCard(randomCard(cardDeck, "player"));
-  });
+  }, [allDealerCards.length, allPlayerCards.length, dealerTurn, dealerCard, playerCard, cardDeck]);
+
+
+  useEffect(() => {
+    setPlayerValue(allPlayerCards.reduce((acc, cVal) => acc + parseInt(cVal.value), 0));
+  }, [allPlayerCards])
+
+  useEffect(() => {
+    setDealerValue(allDealerCards.reduce((acc, cVal) => acc + parseInt(cVal.value), 0));
+  }, [allDealerCards])
+
   
   // remove picked card from deck
   const removeCard = (selectedCard) => {
@@ -51,17 +65,20 @@ const Board = () => {
 
   return (
     <div className="blackjack__wrapper">
-      <button className="blackjack__draw__btn" onClick={() => toggleDealerTurn(!dealerTurn) }>Draw Card</button>
       <section>
         <aside className="blackjack__dealer__wrapper">
+          <p>Dealer</p>
           {allDealerCards.map((dealerCard, index) => (
             <Dealer number={index} key={dealerCard.id} card={dealerCard}/>
           ))}
+          <p>{dealerValue}</p>
         </aside>
         <aside className="blackjack__player__wrapper">
+          <p>Player</p>
           {allPlayerCards.map(playerCard => (
             <Player key={playerCard.id} card={playerCard}/>
           ))}
+          <p>{playerValue}</p>
         </aside>
       </section>
     </div>

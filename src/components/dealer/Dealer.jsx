@@ -14,12 +14,10 @@ const Dealer = (props) => {
 
   return card !== null && cardNumber === 1 ? (
     <div>
-      <p>Dealer</p>
-      <img className="dealer__hidden" src="https://i.imgur.com/9utk2PI.png" alt="hidden" />
+      <img className="dealer__hidden" src="https://i.imgur.com/Ctr8I1j.png" alt="hidden" />
     </div>
     ) : card !== null ? (
     <div>
-      <p>Dealer</p>
       <Card card={card}/>
     </div>
   ) : (

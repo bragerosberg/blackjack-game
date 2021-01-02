@@ -11,7 +11,6 @@ const Player = (props) => {
 
   return card !== null ? (
     <div>
-      <p>Player</p>
       <Card card={card}/>
     </div>
   ) : (
