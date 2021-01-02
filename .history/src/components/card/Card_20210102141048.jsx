@@ -10,7 +10,7 @@ const Card = (props) => {
 
   return card !== null ? (
     <div className="card__wrapper">
-      <img className="card__image" src={card.img} alt={card.name} />
+      <p>{card.img}</p>
     </div>
   ) : (
     <div>

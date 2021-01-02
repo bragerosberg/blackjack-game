@@ -1,0 +1,8 @@
+.card__wrapper {
+  background-color: rgb(70, 70, 70);
+  padding: 3em;
+}
+
+.card__image {
+  widht: 100px;
+}

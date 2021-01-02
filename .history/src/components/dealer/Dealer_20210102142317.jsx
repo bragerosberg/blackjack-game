@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../card/Card';
-import './Dealer.css';
 import Participant from '../common/participant/Participant';
 
 const Dealer = (props) => {
@@ -15,7 +14,7 @@ const Dealer = (props) => {
   return card !== null && cardNumber === 1 ? (
     <div>
       <p>Dealer</p>
-      <img className="dealer__hidden" src="https://i.imgur.com/9utk2PI.png" alt="hidden" />
+      <img src={blob:https://imgur.com/2a7212b5-617d-4bcc-81f5-ed0e404b83b3}
     </div>
     ) : card !== null ? (
     <div>

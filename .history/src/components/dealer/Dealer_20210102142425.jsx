@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../card/Card';
-import './Dealer.css';
 import Participant from '../common/participant/Participant';
 
 const Dealer = (props) => {
