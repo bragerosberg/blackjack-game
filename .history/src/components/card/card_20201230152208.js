@@ -1,6 +1,0 @@
-const cards = [
-  {
-    "symbol": ""
-  }
-]
-
