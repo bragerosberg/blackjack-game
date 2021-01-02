@@ -344,28 +344,25 @@ const cards = [
     "suit": "clubs",
     "name": "king",
     "value": "10", 
-    "img": "https://i.imgur.com/VbduFMl.png"
+    "img":
   },
   {
     "id": "49",
     "suit": "diamonds",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/ZVreprq.png"
+    "value": "10"
   },
   {
     "id": "50",
     "suit": "hearts",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/T7Sdp2F.png"
+    "value": "10"
   },
   {
     "id": "51",
     "suit": "spades",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/4fLi3As.png"
+    "value": "10"
   },
 ];
 

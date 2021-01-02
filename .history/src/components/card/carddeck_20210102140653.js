@@ -364,8 +364,7 @@ const cards = [
     "id": "51",
     "suit": "spades",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/4fLi3As.png"
+    "value": "10"
   },
 ];
 

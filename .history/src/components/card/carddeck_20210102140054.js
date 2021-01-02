@@ -77,295 +77,254 @@ const cards = [
     "id": "10",
     "suit": "hearts",
     "name": "three",
-    "value": "3",
-    "img": "https://i.imgur.com/HCKgdBm.png"
+    "value": "3"
+    "img"
   },
   {
     "id": "11",
     "suit": "spades",
     "name": "three",
-    "value": "3",
-    "img": "https://i.imgur.com/rcyN7g0.png"
+    "value": "3"
   },
   {
     "id": "12",
     "suit": "clubs",
     "name": "four",
-    "value": "4",
-    "img": "https://i.imgur.com/s4XbONN.png"
+    "value": "4"
   },
   {
     "id": "13",
     "suit": "diamonds",
     "name": "four",
-    "value": "4",
-    "img": "https://i.imgur.com/L3KAion.png"
+    "value": "4"
   },
   {
     "id": "14",
     "suit": "hearts",
     "name": "four",
-    "value": "4",
-    "img": "https://i.imgur.com/gCwbM3X.png"
+    "value": "4"
   },
   {
     "id": "15",
     "suit": "spades",
     "name": "four",
-    "value": "4",
-    "img": "https://i.imgur.com/RGYbtMI.png"
+    "value": "4"
   },
   {
     "id": "16",
     "suit": "clubs",
     "name": "five",
-    "value": "5",
-    "img": "https://i.imgur.com/HDJMMPi.png"
+    "value": "5"
   },
   {
     "id": "17",
     "suit": "diamonds",
     "name": "five",
-    "value": "5",
-    "img": "https://i.imgur.com/wejQahz.png"
+    "value": "5"
   },
   {
     "id": "18",
     "suit": "hearts",
     "name": "five",
-    "value": "5",
-    "img": "https://i.imgur.com/rhuQgkN.png"
+    "value": "5"
   },
   {
     "id": "19",
     "suit": "spades",
     "name": "five",
-    "value": "5",
-    "img": "https://i.imgur.com/0vRNDLj.png"
+    "value": "5"
   },
   {
     "id": "20",
     "suit": "clubs",
     "name": "six",
-    "value": "6",
-    "img": "https://i.imgur.com/LXxnRbN.png"
+    "value": "6"
   },
   {
     "id": "21",
     "suit": "diamonds",
     "name": "six",
-    "value": "6",
-    "img": "https://i.imgur.com/Pmi26Wd.png"
+    "value": "6"
   },
   {
     "id": "22",
     "suit": "hearts",
     "name": "six",
-    "value": "6",
-    "img": "https://i.imgur.com/KRArcFw.png"
+    "value": "6"
   },
   {
     "id": "23",
     "suit": "spades",
     "name": "six",
-    "value": "6",
-    "img": "https://i.imgur.com/tOjm1QD.png"
+    "value": "6"
   },
   {
     "id": "24",
     "suit": "clubs",
     "name": "seven",
-    "value": "7",
-    "img": "https://i.imgur.com/FnU05va.png"
+    "value": "7"
   },
   {
     "id": "25",
     "suit": "diamonds",
     "name": "seven",
-    "value": "7",
-    "img": "https://i.imgur.com/ZL5YVAS.png"
+    "value": "7"
   },
   {
     "id": "26",
     "suit": "hearts",
     "name": "seven",
-    "value": "7", 
-    "img": "https://i.imgur.com/fugdD3E.png",
+    "value": "7"
   },
   {
     "id": "27",
     "suit": "spades",
     "name": "seven",
-    "value": "7",
-    "img": "https://i.imgur.com/TtnT6de.png"
+    "value": "7"
   },
   {
     "id": "28",
     "suit": "clubs",
     "name": "eight",
-    "value": "8",
-    "img": "https://i.imgur.com/bvkgvFG.png"
+    "value": "8"
   },
   {
     "id": "29",
     "suit": "diamonds",
     "name": "eight",
-    "value": "8",
-    "img": "https://i.imgur.com/ZAk31AC.png"
+    "value": "8"
   },
   {
     "id": "30",
     "suit": "hearts",
     "name": "eight",
-    "value": "8",
-    "img": "https://i.imgur.com/w7stRON.png"
+    "value": "8"
   },
   {
     "id": "31",
     "suit": "spades",
     "name": "eight",
-    "value": "8",
-    "img": "https://i.imgur.com/8b8PNlz.png"
+    "value": "8"
   },
   {
     "id": "32",
     "suit": "clubs",
     "name": "nine",
-    "value": "9",
-    "img": "https://i.imgur.com/6ZpQf9b.png"
+    "value": "9"
   },
   {
     "id": "33",
     "suit": "diamonds",
     "name": "nine",
-    "value": "9",
-    "img": "https://i.imgur.com/7vHIuh3.png"
+    "value": "9"
   },
   {
     "id": "34",
     "suit": "hearts",
     "name": "nine",
-    "value": "9",
-    "img": "https://i.imgur.com/HO1n5Sb.png"
+    "value": "9"
   },
   {
     "id": "35",
     "suit": "spades",
     "name": "nine",
-    "value": "9",
-    "img": "https://i.imgur.com/bFXllCB.png"
+    "value": "9"
   },
   {
     "id": "36",
     "suit": "clubs",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/nDT5pZN.png"
+    "value": "10"
   },
   {
     "id": "37",
     "suit": "diamonds",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/Sh9p4Vw.png"
+    "value": "10"
   },
   {
     "id": "38",
     "suit": "hearts",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/njtDUVo.png"
+    "value": "10"
   },
   {
     "id": "39",
     "suit": "spades",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/xFRqI4E.png"
+    "value": "10"
   },
   {
     "id": "40",
     "suit": "clubs",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/fI5sEY9.png"
+    "value": "10"
   },
   {
     "id": "41",
     "suit": "diamonds",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/PzjkFzE.png"
+    "value": "10"
   },
   {
     "id": "42",
     "suit": "hearts",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/tH5eYpq.png"
+    "value": "10"
   },
   {
     "id": "43",
     "suit": "spades",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/1zGQpMm.png"
+    "value": "10"
   },
   {
     "id": "44",
     "suit": "clubs",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/zimMv6M.png"
+    "value": "10"
   },
   {
     "id": "45",
     "suit": "diamonds",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/C1aijG6.png"
+    "value": "10"
   },
   {
     "id": "46",
     "suit": "hearts",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/hqxSCqr.png"
+    "value": "10"
   },
   {
     "id": "47",
     "suit": "spades",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/aRmvsrM.png"
+    "value": "10"
   },
   {
     "id": "48",
     "suit": "clubs",
     "name": "king",
-    "value": "10", 
-    "img": "https://i.imgur.com/VbduFMl.png"
+    "value": "10"
   },
   {
     "id": "49",
     "suit": "diamonds",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/ZVreprq.png"
+    "value": "10"
   },
   {
     "id": "50",
     "suit": "hearts",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/T7Sdp2F.png"
+    "value": "10"
   },
   {
     "id": "51",
     "suit": "spades",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/4fLi3As.png"
+    "value": "10"
   },
 ];
 

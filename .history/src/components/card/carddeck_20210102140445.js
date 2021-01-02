@@ -246,126 +246,109 @@ const cards = [
     "suit": "hearts",
     "name": "nine",
     "value": "9",
-    "img": "https://i.imgur.com/HO1n5Sb.png"
+    "img": https://i.imgur.com/HO1n5Sb.png
   },
   {
     "id": "35",
     "suit": "spades",
     "name": "nine",
-    "value": "9",
-    "img": "https://i.imgur.com/bFXllCB.png"
+    "value": "9"
   },
   {
     "id": "36",
     "suit": "clubs",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/nDT5pZN.png"
+    "value": "10"
   },
   {
     "id": "37",
     "suit": "diamonds",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/Sh9p4Vw.png"
+    "value": "10"
   },
   {
     "id": "38",
     "suit": "hearts",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/njtDUVo.png"
+    "value": "10"
   },
   {
     "id": "39",
     "suit": "spades",
     "name": "ten",
-    "value": "10",
-    "img": "https://i.imgur.com/xFRqI4E.png"
+    "value": "10"
   },
   {
     "id": "40",
     "suit": "clubs",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/fI5sEY9.png"
+    "value": "10"
   },
   {
     "id": "41",
     "suit": "diamonds",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/PzjkFzE.png"
+    "value": "10"
   },
   {
     "id": "42",
     "suit": "hearts",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/tH5eYpq.png"
+    "value": "10"
   },
   {
     "id": "43",
     "suit": "spades",
     "name": "jack",
-    "value": "10",
-    "img": "https://i.imgur.com/1zGQpMm.png"
+    "value": "10"
   },
   {
     "id": "44",
     "suit": "clubs",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/zimMv6M.png"
+    "value": "10"
   },
   {
     "id": "45",
     "suit": "diamonds",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/C1aijG6.png"
+    "value": "10"
   },
   {
     "id": "46",
     "suit": "hearts",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/hqxSCqr.png"
+    "value": "10"
   },
   {
     "id": "47",
     "suit": "spades",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/aRmvsrM.png"
+    "value": "10"
   },
   {
     "id": "48",
     "suit": "clubs",
     "name": "king",
-    "value": "10", 
-    "img": "https://i.imgur.com/VbduFMl.png"
+    "value": "10"
   },
   {
     "id": "49",
     "suit": "diamonds",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/ZVreprq.png"
+    "value": "10"
   },
   {
     "id": "50",
     "suit": "hearts",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/T7Sdp2F.png"
+    "value": "10"
   },
   {
     "id": "51",
     "suit": "spades",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/4fLi3As.png"
+    "value": "10"
   },
 ];
 

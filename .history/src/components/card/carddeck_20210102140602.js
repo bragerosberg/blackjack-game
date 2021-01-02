@@ -322,50 +322,43 @@ const cards = [
     "id": "45",
     "suit": "diamonds",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/C1aijG6.png"
+    "value": "10"
   },
   {
     "id": "46",
     "suit": "hearts",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/hqxSCqr.png"
+    "value": "10"
   },
   {
     "id": "47",
     "suit": "spades",
     "name": "queen",
-    "value": "10",
-    "img": "https://i.imgur.com/aRmvsrM.png"
+    "value": "10"
   },
   {
     "id": "48",
     "suit": "clubs",
     "name": "king",
-    "value": "10", 
-    "img": "https://i.imgur.com/VbduFMl.png"
+    "value": "10"
   },
   {
     "id": "49",
     "suit": "diamonds",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/ZVreprq.png"
+    "value": "10"
   },
   {
     "id": "50",
     "suit": "hearts",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/T7Sdp2F.png"
+    "value": "10"
   },
   {
     "id": "51",
     "suit": "spades",
     "name": "king",
-    "value": "10",
-    "img": "https://i.imgur.com/4fLi3As.png"
+    "value": "10"
   },
 ];
 
