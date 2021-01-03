@@ -65,22 +65,26 @@ const Board = () => {
 
   return (
     <div className="blackjack__wrapper">
-      <section>
+      <artcile>
         <aside className="blackjack__dealer__wrapper">
           <p>Dealer</p>
-          {allDealerCards.map((dealerCard, index) => (
-            <Dealer number={index} key={dealerCard.id} card={dealerCard}/>
-          ))}
-          <p>{dealerValue}</p>
+          <section className="blackjack__card__wrapper">
+            {allDealerCards.map((dealerCard, index) => (
+              <Dealer number={index} key={dealerCard.id} card={dealerCard}/>
+            ))}
+          </section>
+          <p className="blackcard__cardvalue">{dealerValue}</p>
         </aside>
         <aside className="blackjack__player__wrapper">
           <p>Player</p>
-          {allPlayerCards.map(playerCard => (
-            <Player key={playerCard.id} card={playerCard}/>
-          ))}
-          <p>{playerValue}</p>
+          <section className="blackjack__card__wrapper">
+            {allPlayerCards.map(playerCard => (
+              <Player key={playerCard.id} card={playerCard}/>
+            ))}
+          </section>
+          <p className="blackcard__cardvalue">{playerValue}</p>
         </aside>
-      </section>
+      </artcile>
     </div>
   )
 }

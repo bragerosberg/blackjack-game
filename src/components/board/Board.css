@@ -3,6 +3,18 @@
 }
 
 .blackjack__dealer__wrapper,
-.blackjack__player__wrapper {
+.blackjack__player__wrapper,
+.blackjack__card__wrapper{
   display: flex;
+}
+
+.blackjack__dealer__wrapper,
+.blackjack__player__wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blackcard__cardvalue {
+  color: white;
+  font-weight: 600;
 }
