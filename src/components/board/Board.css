@@ -4,7 +4,8 @@
 
 .blackjack__dealer__wrapper,
 .blackjack__player__wrapper,
-.blackjack__card__wrapper{
+.blackjack__card__wrapper,
+.blackjack__player__buttons{
   display: flex;
 }
 
@@ -14,7 +15,14 @@
   align-items: center;
 }
 
-.blackcard__cardvalue {
+.blackjack__cardvalue {
   color: white;
   font-weight: 600;
+}
+
+.blackjack__player__buttons-hit,
+.blackjack__player__buttons-stand {
+  color: white;
+  padding: 1em;
+  width: 6em;
 }

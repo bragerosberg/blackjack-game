@@ -21,13 +21,10 @@ const Board = () => {
 
   // carddeck and last card
   const [cardDeck, setCardDeck] = useState(cards);
-  const [card, setCard] = useState(null);
 
   useEffect(() => {
     if (allDealerCards.length < 2) setDealerCard(randomCard(cardDeck, "dealer"));
     if (allPlayerCards.length < 2) setPlayerCard(randomCard(cardDeck, "player"));
-    if (dealerTurn === true && dealerCard === null) setDealerCard(randomCard(cardDeck, "dealer"));
-    if (dealerTurn === false && playerCard === null) setPlayerCard(randomCard(cardDeck, "player"));
   }, [allDealerCards.length, allPlayerCards.length, dealerTurn, dealerCard, playerCard, cardDeck]);
 
 
@@ -39,17 +36,14 @@ const Board = () => {
     setDealerValue(allDealerCards.reduce((acc, cVal) => acc + parseInt(cVal.value), 0));
   }, [allDealerCards])
 
-  
   // remove picked card from deck
   const removeCard = (selectedCard) => {
     setCardDeck(cardDeck.filter(card => card.id !== selectedCard.id));
   }
   
-  
   // select random card from deck
   const randomCard = (arr, participant) => {
     const card = arr[arr.length * Math.random() | 0];
-    setCard(card);
     removeCard(card);
     
     if(participant === "dealer") {
@@ -59,8 +53,6 @@ const Board = () => {
       setPlayerCard(null);
       setAllPlayerCards([...allPlayerCards, card]);
     }
-    
-    return card;
   }
 
   return (
@@ -73,8 +65,9 @@ const Board = () => {
               <Dealer number={index} key={dealerCard.id} card={dealerCard}/>
             ))}
           </section>
-          <p className="blackcard__cardvalue">{dealerValue}</p>
+          <p className="blackjack__cardvalue">{dealerValue}</p>
         </aside>
+
         <aside className="blackjack__player__wrapper">
           <p>Player</p>
           <section className="blackjack__card__wrapper">
@@ -82,7 +75,11 @@ const Board = () => {
               <Player key={playerCard.id} card={playerCard}/>
             ))}
           </section>
-          <p className="blackcard__cardvalue">{playerValue}</p>
+          <section className="blackjack__player__buttons">
+            <button className="blackjack__player__buttons-hit" onClick={() => randomCard(cardDeck, "player")}>Hit</button>
+            <button className="blackjack__player__buttons-stand" >Stand</button>
+          </section>
+          <p className="blackjack__cardvalue">{playerValue}</p>
         </aside>
       </artcile>
     </div>
