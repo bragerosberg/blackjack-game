@@ -23,10 +23,9 @@ const Board = () => {
   const [cardDeck, setCardDeck] = useState(cards);
 
   useEffect(() => {
-    if (allDealerCards.length < 2) setDealerCard(randomCard(cardDeck, "dealer"));
-    if (allPlayerCards.length < 2) setPlayerCard(randomCard(cardDeck, "player"));
-  }, [allDealerCards.length, allPlayerCards.length, dealerTurn, dealerCard, playerCard, cardDeck]);
-
+    if (allDealerCards.length < 2) setDealerCard(randomPlayerCard());
+    if (allPlayerCards.length < 2) setPlayerCard(randomDealerCard());
+  }, [allDealerCards.length, allPlayerCards.length]);
 
   useEffect(() => {
     setPlayerValue(allPlayerCards.reduce((acc, cVal) => acc + parseInt(cVal.value), 0));
@@ -42,17 +41,29 @@ const Board = () => {
   }
   
   // select random card from deck
-  const randomCard = (arr, participant) => {
+  const randomCard = (arr) => {
     const card = arr[arr.length * Math.random() | 0];
     removeCard(card);
-    
-    if(participant === "dealer") {
-      setAllDealerCards([...allDealerCards, card]);
-      setDealerCard(null);
-    } else {
+    return card;
+  }
+
+  const randomPlayerCard = () => {
+    if(playerValue < 21) {
+      setAllPlayerCards([...allPlayerCards, randomCard(cardDeck)]);
       setPlayerCard(null);
-      setAllPlayerCards([...allPlayerCards, card]);
     }
+  }
+
+  const randomDealerCard = () => {
+    if (dealerValue !== 16 && dealerValue < 17) {
+    setAllDealerCards([...allDealerCards, randomCard(cardDeck)]);
+    setDealerCard(null);
+    }
+  }
+
+  const handlePlayerStand = () => {
+    toggleDealerTurn(true);
+    randomDealerCard();
   }
 
   return (
@@ -62,7 +73,7 @@ const Board = () => {
           <p>Dealer</p>
           <section className="blackjack__card__wrapper">
             {allDealerCards.map((dealerCard, index) => (
-              <Dealer number={index} key={dealerCard.id} card={dealerCard}/>
+              <Dealer turn={dealerTurn} number={index} key={dealerCard.id} card={dealerCard}/>
             ))}
           </section>
           <p className="blackjack__cardvalue">{dealerValue}</p>
@@ -76,8 +87,8 @@ const Board = () => {
             ))}
           </section>
           <section className="blackjack__player__buttons">
-            <button className="blackjack__player__buttons-hit" onClick={() => randomCard(cardDeck, "player")}>Hit</button>
-            <button className="blackjack__player__buttons-stand" >Stand</button>
+            <button className="blackjack__player__buttons-hit" onClick={() => randomPlayerCard(cardDeck)}>Hit</button>
+            <button className="blackjack__player__buttons-stand" onClick={() => handlePlayerStand()}>Stand</button>
           </section>
           <p className="blackjack__cardvalue">{playerValue}</p>
         </aside>
