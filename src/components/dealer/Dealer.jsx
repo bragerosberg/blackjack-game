@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../card/Card';
 import './Dealer.css';
-import Participant from '../common/participant/Participant';
 
 const Dealer = (props) => {
   const [card, setCard] = useState(null);
@@ -12,7 +11,7 @@ const Dealer = (props) => {
     setCard(props.card);
     updateCardNumber(props.number);
     updateDealerTurn(props.turn);
-  })
+  }, [props.card, props.number, props.turn])
 
   return card !== null && cardNumber === 1 && dealerTurn === false ? (
     <div>

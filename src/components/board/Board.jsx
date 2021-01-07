@@ -6,8 +6,6 @@ import './Board.css';
 
 const Board = () => {
   // the last card for each participant
-  const [dealerCard, setDealerCard] = useState(null);
-  const [playerCard, setPlayerCard] = useState(null);
 
   const [allDealerCards, setAllDealerCards] = useState([]);
   const [allPlayerCards, setAllPlayerCards] = useState([]);
@@ -23,8 +21,9 @@ const Board = () => {
   const [cardDeck, setCardDeck] = useState(cards);
 
   useEffect(() => {
-    if (allDealerCards.length < 2) setDealerCard(randomPlayerCard());
-    if (allPlayerCards.length < 2) setPlayerCard(randomDealerCard());
+    if (allDealerCards.length < 2) randomDealerCard();
+    if (allPlayerCards.length < 2) randomPlayerCard();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allDealerCards.length, allPlayerCards.length]);
 
   useEffect(() => {
@@ -50,14 +49,12 @@ const Board = () => {
   const randomPlayerCard = () => {
     if(playerValue < 21) {
       setAllPlayerCards([...allPlayerCards, randomCard(cardDeck)]);
-      setPlayerCard(null);
     }
   }
 
   const randomDealerCard = () => {
     if (dealerValue !== 16 && dealerValue < 17) {
-    setAllDealerCards([...allDealerCards, randomCard(cardDeck)]);
-    setDealerCard(null);
+      setAllDealerCards([...allDealerCards, randomCard(cardDeck)]);
     }
   }
 

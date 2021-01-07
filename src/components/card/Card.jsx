@@ -6,7 +6,7 @@ const Card = (props) => {
 
   useEffect(() => {
     setCard(props.card);
-  })
+  }, [props.card])
 
   return card !== null ? (
     <div className="card__wrapper">
