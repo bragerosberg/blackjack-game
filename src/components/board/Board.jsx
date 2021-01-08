@@ -5,8 +5,6 @@ import cards from '../card/carddeck';
 import './Board.css';
 
 const Board = () => {
-  // the last card for each participant
-
   const [allDealerCards, setAllDealerCards] = useState([]);
   const [allPlayerCards, setAllPlayerCards] = useState([]);
 
@@ -53,14 +51,13 @@ const Board = () => {
   }
 
   const randomDealerCard = () => {
-    if (dealerValue !== 16 && dealerValue < 17) {
+    if (dealerValue < 17) {
       setAllDealerCards([...allDealerCards, randomCard(cardDeck)]);
     }
   }
 
   const handlePlayerStand = () => {
     toggleDealerTurn(true);
-    randomDealerCard();
   }
 
   return (
@@ -73,8 +70,11 @@ const Board = () => {
               <Dealer turn={dealerTurn} number={index} key={dealerCard.id} card={dealerCard}/>
             ))}
           </section>
-          <p className="blackjack__cardvalue">{dealerValue}</p>
+          <p>{dealerValue}</p>
         </aside>
+        <section className="blackjack__dealer__rules">
+          <p>Dealer must Hit, if he has 16 or less</p>
+        </section>
 
         <aside className="blackjack__player__wrapper">
           <p>Player</p>
@@ -87,7 +87,6 @@ const Board = () => {
             <button className="blackjack__player__buttons-hit" onClick={() => randomPlayerCard(cardDeck)}>Hit</button>
             <button className="blackjack__player__buttons-stand" onClick={() => handlePlayerStand()}>Stand</button>
           </section>
-          <p className="blackjack__cardvalue">{playerValue}</p>
         </aside>
       </artcile>
     </div>

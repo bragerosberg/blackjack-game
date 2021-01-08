@@ -10,9 +10,11 @@
 }
 
 .blackjack__dealer__wrapper,
-.blackjack__player__wrapper {
+.blackjack__player__wrapper,
+.blackjack__dealer__rules {
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .blackjack__cardvalue {
