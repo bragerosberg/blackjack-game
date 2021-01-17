@@ -70,7 +70,7 @@ const Board = () => {
               <Dealer turn={dealerTurn} number={index} key={dealerCard.id} card={dealerCard}/>
             ))}
           </section>
-          <p>{dealerValue}</p>
+          {/* <p>{dealerValue}</p> */}
         </aside>
         <section className="blackjack__dealer__rules">
           <p>Dealer must Hit, if he has 16 or less</p>
