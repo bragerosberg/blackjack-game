@@ -8,14 +8,18 @@ const Card = (props) => {
     setCard(props.card);
   }, [props.card])
 
-  return card !== null ? (
-    <div className="card__wrapper">
-      <img className="card__image" src={card.img} alt={card.name} />
-    </div>
-  ) : (
-    <div>
-      <p>Loading card...</p>
-    </div>
+  return (
+    <>
+      {card !== null ? (
+        <div className="card__wrapper">
+          <img className="card__image" src={card.img} alt={card.name} />
+        </div>
+      ) : ( 
+        <div>
+          <p>Loading card...</p>
+        </div>
+      )}
+    </>
   )
 }
 

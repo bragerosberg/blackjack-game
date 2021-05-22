@@ -13,18 +13,25 @@ const Dealer = (props) => {
     updateDealerTurn(props.turn);
   }, [props.card, props.number, props.turn])
 
-  return card !== null && cardNumber === 1 && dealerTurn === false ? (
-    <div>
-      <img className="dealer__hidden" src="https://i.imgur.com/Ctr8I1j.png" alt="hidden" />
-    </div>
-    ) : card !== null ? (
-    <div>
-      <Card card={card}/>
-    </div>
-  ) : (
-    <div>
-      <p>Loading Dealer...</p>
-    </div>
+  const isPlayerDone = card !== null && cardNumber === 1 && dealerTurn === false;
+
+  return (
+    <>
+      {isPlayerDone && (
+        <div>
+          <img className="dealer__hidden" src="https://i.imgur.com/Ctr8I1j.png" alt="hidden" />
+        </div>
+      )}
+      {card !== null ? (
+        <div>
+          <Card card={card}/>
+        </div>
+      ) : (
+      <div>
+        <p>Loading Dealer...</p>
+      </div>
+      )}
+    </>
   )
 }
 

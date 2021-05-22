@@ -8,14 +8,18 @@ const Player = (props) => {
     setCard(props.card);
   }, [props.card])
 
-  return card !== null ? (
-    <div>
-      <Card card={card}/>
-    </div>
-  ) : (
-    <div>
-      <p>Loading Player...</p>
-    </div>
+  return (
+    <>
+     {card !== null ? (
+      <div>
+        <Card card={card}/>
+      </div>
+     ) : (
+      <div>
+        <p>Loading Player...</p>
+      </div>
+     )}
+    </>
   )
 }
 
