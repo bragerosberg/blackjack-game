@@ -38,8 +38,8 @@ const Board = () => {
   }
   
   // select random card from deck
-  const randomCard = (arr) => {
-    const card = arr[arr.length * Math.random() | 0];
+  const randomCard = (cardDeck) => {
+    const card = cardDeck[cardDeck.length * Math.random() | 0];
     removeCard(card);
     return card;
   }
@@ -70,7 +70,6 @@ const Board = () => {
               <Dealer turn={dealerTurn} number={index} key={dealerCard.id} card={dealerCard}/>
             ))}
           </section>
-          {/* <p>{dealerValue}</p> */}
         </aside>
         <section className="blackjack__dealer__rules">
           <p>Dealer must Hit, if he has 16 or less</p>
