@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Card.css';
 
-const Card = (props) => {
-  const [card, setCard] = useState(null);
-
-  useEffect(() => {
-    setCard(props.card);
-  }, [props.card])
-
+const Card = ({ card }) => {
   return (
     <>
-      {card !== null ? (
+      {card ? (
         <div className="card__wrapper">
           <img className="card__image" src={card.img} alt={card.name} />
         </div>
